@@ -1,0 +1,11 @@
+type Transaction = 
+ record {
+   amount: nat;
+   from: text;
+   timestamp: int;
+   to: text;
+ };
+service : {
+  getTransactionHistory: () -> (vec Transaction) query;
+  sendCrypto: (text, nat) -> (text);
+}

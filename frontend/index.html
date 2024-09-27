@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Sender</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Send Crypto</h1>
+        <form id="sendForm">
+            <input type="text" id="recipient" placeholder="Recipient Address" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <button type="submit">Send</button>
+        </form>
+        <div id="message"></div>
+        <h2>Transaction History</h2>
+        <ul id="transactionList"></ul>
+    </div>
+    <script type="module" src="index.js"></script>
+</body>
+</html>
